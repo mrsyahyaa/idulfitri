@@ -61,16 +61,16 @@ function tampilJam() {
             var jam_skr = hari.getHours();
             var menit_skr = hari.getMinutes();
             var detik_skr = hari.getSeconds();
-            if (jam_skr < 12) {
-                a_p = "AM";
+            if (jam_skr < 24) {
+                a_p = "";
             } else {
-                a_p = "PM";
+                a_p = "";
             }
             if (jam_skr == 0) {
-                jam_skr = 12;
+                jam_skr = 24;
             }
-            if (jam_skr > 12) {
-                jam_skr = jam_skr - 12;
+            if (jam_skr > 24) {
+                jam_skr = jam_skr - 24;
             }
             jam_skr = cekJam(jam_skr);
             menit_skr = cekJam(menit_skr);
